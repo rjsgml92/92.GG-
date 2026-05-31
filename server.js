@@ -6,7 +6,7 @@ const axios = require('axios');
 const app = express();
 app.use(cors());
 
-const RIOT_API_KEY = "RGAPI-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"; 
+const RIOT_API_KEY = process.env.RIOT_API_KEY;
 const DDRAGON_VERSION = "14.22.1"; 
 
 // 🎮 게임 큐 ID별 매치 종류 한글 변환 함수
